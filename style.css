@@ -5,16 +5,13 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-image: url(peakpx.jpg);
+  background: url(peakpx.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100%;
-}
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: url(pxfuel1.jpg);
-    background-size: cover;
-    height: 100vh;
-  }
+  overflow: hidden;
 }
 
 .card {
@@ -30,6 +27,7 @@ body {
   perspective: 1200px;
   transition: 1s;
 }
+
 .card:hover {
   transform: rotate(-5deg);
 }
